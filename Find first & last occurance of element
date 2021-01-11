@@ -1,3 +1,4 @@
+
 class Main  {
     public static void position(int a[],int num)
     {
@@ -12,27 +13,27 @@ class Main  {
             {
                 first=i;
             }
-            else
-            {
-                last=i;
-            }
+            last=i;
+
         }
-        if(first==-1)
-        {
-            System.out.print("No such element is found in the list");
-        }
-        else
+        if(first!=-1)
         {
             System.out.println("First occurance of the element is :"+first);
             System.out.println("First occurance of the element is :"+last);
+        }
+        else
+        {
+            System.out.print("No such element is found in the list");
+
         }
     }
         public static  void main(String []args) {
 
             Scanner sc = new Scanner(System.in);
             int a[]={2,3,4,4,5,6,7,84,4,4,67,87,54,4,6};
-            int num =4;
+            int num =7;
             position(a,num);
 
 }
 }
+
