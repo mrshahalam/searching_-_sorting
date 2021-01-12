@@ -1,0 +1,27 @@
+import  java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         int a[] ={ 4, 3, 6, 2, 1, 1 };
+        Map<Integer,Boolean> n = new HashMap<>();
+        for(Integer i : a)
+        {
+            if(n.get(i)==null)
+            {
+                n.put(i,true);
+            }
+            else
+            {
+                System.out.println("Repeating element are : "+i);
+            }
+           
+        }
+         for(int k=1;k<a.length;k++)
+            {
+                if(n.get(k)==null)
+                {
+                    System.out.println("Missing element : "+k);
+                }
+            }
+     }
+}
