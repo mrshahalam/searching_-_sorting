@@ -1,0 +1,37 @@
+public class HelloWorld{
+    public static int sort(int a[] , int b[], int k)
+    {
+        int i=0,j=0,temp=0;
+        int sort[] = new int[10];
+        while(i<a.length && j<b.length)
+        {
+            if(a[i]<b[j])
+            {
+                sort[temp++] =a[i++];
+            }
+            else
+            {
+                sort[temp++] = b[j++];
+            }
+        }
+        while(i<a.length)
+            {
+                sort[temp++] = a[i++];
+            }
+            while(j<b.length)
+            {
+                sort[temp++] = b[j++];
+            }
+            
+        return sort[k-1];
+    }
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        int arr1[] = {2, 3, 6, 7, 9};
+        int arr2[] = {1, 4, 8, 10};
+        int k = 4;
+        System.out.print(" "+sort(arr1,arr2,k));
+        
+     }
+}
